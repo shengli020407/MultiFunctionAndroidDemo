@@ -14,16 +14,14 @@ import com.umeng.analytics.MobclickAgent;
 
 /**
  * Created by wangfei on 2018/1/23.
- */
-
 public abstract class BaseActivity extends FragmentActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             Window window = getWindow();
-            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-            window.setStatusBarColor(getResources().getColor(R.color.titlebg));
+            window.addFlags(WindoyoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+            window.setStatusBarColor(getResources().getColor(R.colorebg));
 
         }
         setContentView(getLayout());
